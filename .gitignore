@@ -2,3 +2,6 @@
 *.docx
 *.txt
 spam.csv
+**/raw/**
+*.tmp
+*.pt
