@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv_iabd/bin/python",
+  "python.terminal.activateEnvironment": true
+}

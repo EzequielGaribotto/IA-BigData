@@ -5,3 +5,7 @@ spam.csv
 **/raw/**
 *.tmp
 *.pt
+/venv_iabd
+!requirements.txt
+**/logs**
+*.keras
