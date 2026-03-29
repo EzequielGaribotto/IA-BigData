@@ -158,10 +158,10 @@ StoreManager es un sistema de gestión de inventario para pequeñas tiendas, ori
 ## Interrelación entre módulos
 
 - Inventario ↔ Alertas  
-- Ventas → Inventario  
-- Ventas → Informes  
-- Inventario → Informes  
-- Alertas → Informes  
+- Ventas --> Inventario  
+- Ventas --> Informes  
+- Inventario --> Informes  
+- Alertas --> Informes  
 
 ---
 

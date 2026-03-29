@@ -70,7 +70,7 @@ Un programa informático es un conjunto de instrucciones escritas por un program
 
 ### 1. Aprendizaje Supervisado
 - Usa datos etiquetados
-- Aprende relación entrada → salida
+- Aprende relación entrada --> salida
 
 **Ejemplo:**
 - Clasificación de imágenes (gato vs perro)

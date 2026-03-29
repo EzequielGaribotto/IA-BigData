@@ -6,9 +6,8 @@ spam.csv
 *.tmp
 *.pt
 /venv_iabd
-!requirements.txt
 **/logs**
 *.keras
 M03/Voluntarios
-**/T4
 !ejercicio_**.pdf
+**/ACT_OPT_04
