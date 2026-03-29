@@ -1,0 +1,25 @@
+name: ia_env_data
+# Ejercicio 1 (sklearn) + notebooks de M03/RA1
+# Sin GPU necesaria
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Stack numérico
+  - numpy=1.26.4
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # Utilidades
+  - requests
+  - jupyterlab
+  - ipykernel
+  - nbconvert

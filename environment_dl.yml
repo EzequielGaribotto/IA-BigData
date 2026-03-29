@@ -1,0 +1,43 @@
+name: ia_env_dl
+# Ejercicio 2 (PyTorch CNN) + Distilbert + notebooks LangChain/Anthropic (M03/RA2/T4)
+# GPU: torch 2.11.0+cu130 (CUDA 13.0, compatible con driver 595.97)
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Stack numérico (numpy<2 para compatibilidad con torch internals)
+  - numpy=1.26.4
+  - pandas
+  - scikit-learn    # ConfusionMatrixDisplay, accuracy_score (ejercicio_2)
+  - matplotlib
+  - seaborn         # heatmaps de activaciones FC (ejercicio_2)
+
+  # Utilidades
+  - requests
+  - jupyterlab
+  - ipykernel
+  - nbconvert
+
+  - pip
+  - pip:
+      # PyTorch GPU — cu130 = CUDA 13.0, que es lo que tiene el sistema
+      - --extra-index-url https://download.pytorch.org/whl/cu130
+      - torch==2.11.0+cu130
+      - torchvision==0.26.0+cu130
+
+      # Hugging Face
+      - transformers
+      - datasets
+      - evaluate
+
+      # LangChain + APIs (M03/RA2/T4)
+      - langchain
+      - langchain-community
+      - langchain-core
+      - langchain-groq
+      - langchain-openai
+      - anthropic

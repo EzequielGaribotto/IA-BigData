@@ -1,0 +1,31 @@
+name: ia_env_tf
+# Ejercicio 3 (Keras/TensorFlow CNN)
+# GPU: TF 2.16.2 instala sus propias CUDA 12.x libs via pip (nvidia-cuda-*-cu12)
+# Compatible con driver 595.97 aunque el driver reporte CUDA 13.x
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # numpy<2 obligatorio: TF 2.16.2 no es compatible con numpy 2.x
+  - numpy=1.26.4
+  - pandas
+  - scikit-learn    # confusion_matrix, ConfusionMatrixDisplay (ejercicio_3)
+  - matplotlib
+  - seaborn
+
+  # Utilidades
+  - requests
+  - jupyterlab
+  - ipykernel
+  - nbconvert
+
+  - pip
+  - pip:
+      # TF instala internamente: nvidia-cuda-runtime-cu12, nvidia-cublas-cu12, etc.
+      # No hace falta cudatoolkit en conda
+      - tensorflow==2.16.2
+      - keras==3.13.2
