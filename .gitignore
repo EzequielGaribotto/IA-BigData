@@ -11,3 +11,4 @@ spam.csv
 *.keras
 M03/Voluntarios
 **/T4
+!ejercicio_**.pdf
