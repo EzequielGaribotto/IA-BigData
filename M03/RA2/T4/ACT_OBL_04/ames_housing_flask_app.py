@@ -49,11 +49,13 @@ def predict():
 
         input_df = build_input(data, feature_columns)
 
-        prediccion = modelo_casas.predict(input_df)[0]
+        prediccion_log = modelo_casas.predict(input_df)[0]
+        prediccion_usd = np.expm1(prediccion_log)  # invertir log1p → USD reales
 
         return jsonify({
             "status": "success",
-            "precio_estimado_usd": round(float(prediccion), 2)
+            "precio_estimado_usd": round(float(prediccion_usd), 2),
+            "precio_formateado": f"${prediccion_usd:,.0f}"
         })
 
     except Exception as e:
