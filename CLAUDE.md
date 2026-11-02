@@ -24,6 +24,9 @@ Repo of the Linkia FP specialization in AI and Big Data. It is PUBLIC on GitHub 
 - Do not commit datasets, model weights, environments, logs or third-party binaries (the `.gitignore` covers them). `git status` before committing; ask before pushing.
 - Before any commit, run `git status` and check that nothing under `_educational/` and nothing the user has not classified is staged.
 
+## Notebooks
+Every notebook that is delivered or exported to PDF follows `notebook_pdf/GUIDELINES.md` from its first cell. Read it before creating or editing one. Before calling a notebook done, restart and run it, then export it with `notebook_pdf/export.sh <notebook>`, fix every error and read the resulting PDF.
+
 ## Ideas queue (own work, no deadline, no priority until the user says so)
 Capstone deliveries come first (2026-11-03 regression, 2026-12-01 clustering, 2027-01-08 final report). Offer an idea only when there is room; never start one unprompted.
 - **MLflow + model card for the Ames house-price model** (`M03_ProgramacionDeIA/RA2/T4/ACT_OBL_04`, Random Forest/XGBoost with grid search, served by `ames_housing_flask_app.py`): log runs, parameters and metrics with MLflow, version the model, write a short model card (data, metrics, limits). Why: experiment tracking and reproducibility show up in junior AI/ML stacks. Effort: small. Own work, so it is published; it is not a CV line unless the user decides it is.

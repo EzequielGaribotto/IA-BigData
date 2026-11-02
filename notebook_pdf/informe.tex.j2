@@ -1,0 +1,16 @@
+((*- extends 'index.tex.j2' -*))
+
+((* block maketitle *))((* endblock maketitle *))
+
+((* block margins *))
+((( super() )))
+\setcounter{secnumdepth}{0}
+\usepackage{array}
+((* include 'fuentes.tex' *))
+((* endblock margins *))
+
+((*- block data_png -*))
+\begin{center}
+\adjustimage{max size={\linewidth}{0.9\paperheight}}{((( output.metadata.filenames['image/png'] )))}
+\end{center}
+((*- endblock -*))
