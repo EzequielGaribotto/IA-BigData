@@ -1,5 +1,5 @@
 name: ia_env_dl
-# Ejercicio 2 (PyTorch CNN) + Distilbert + notebooks LangChain/Anthropic (M03/RA2/T4)
+# CNN con PyTorch (clasificacion_mnist_cnn_pytorch) + Distilbert + notebooks LangChain/Anthropic (M03/RA2/T4)
 # GPU: torch 2.11.0+cu130 (CUDA 13.0, compatible con driver 595.97)
 
 channels:
@@ -12,9 +12,9 @@ dependencies:
   # Stack numérico (numpy<2 para compatibilidad con torch internals)
   - numpy=1.26.4
   - pandas
-  - scikit-learn    # ConfusionMatrixDisplay, accuracy_score (ejercicio_2)
+  - scikit-learn    # ConfusionMatrixDisplay, accuracy_score (clasificacion_mnist_cnn_pytorch)
   - matplotlib
-  - seaborn         # heatmaps de activaciones FC (ejercicio_2)
+  - seaborn         # heatmaps de activaciones FC (clasificacion_mnist_cnn_pytorch)
 
   # Utilidades
   - requests

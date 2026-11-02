@@ -1,5 +1,5 @@
 name: ia_env_tf
-# Ejercicio 3 (Keras/TensorFlow CNN)
+# CNN con Keras/TensorFlow (clasificacion_mnist_cnn_keras)
 # GPU: TF 2.16.2 instala sus propias CUDA 12.x libs via pip (nvidia-cuda-*-cu12)
 # Compatible con driver 595.97 aunque el driver reporte CUDA 13.x
 
@@ -13,7 +13,7 @@ dependencies:
   # numpy<2 obligatorio: TF 2.16.2 no es compatible con numpy 2.x
   - numpy=1.26.4
   - pandas
-  - scikit-learn    # confusion_matrix, ConfusionMatrixDisplay (ejercicio_3)
+  - scikit-learn    # confusion_matrix, ConfusionMatrixDisplay (clasificacion_mnist_cnn_keras)
   - matplotlib
   - seaborn
 

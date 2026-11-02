@@ -1,5 +1,5 @@
 name: ia_env_data
-# Ejercicio 1 (sklearn) + notebooks de M03/RA1
+# MLP con sklearn (clasificacion_mnist_mlp_sklearn) + notebooks de M03/RA1
 # Sin GPU necesaria
 
 channels:
