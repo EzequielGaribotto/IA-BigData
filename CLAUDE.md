@@ -7,15 +7,17 @@ Repo of the Linkia FP specialization in AI and Big Data. It is PUBLIC on GitHub 
 **Educational support** = anything the course provides or anything derived from it:
 - Official documents: `IABD_*.pdf/.docx/.md` (unit documents, activity statements, capstone statements), `Clase N.pdf` (slides), `Programación de Inteligencia Artificial.pdf`, practice guides and activity sheets (for example `Actividades_RA1.pdf`, `Hadoop_Docker_Pràctica.pdf`, `Monitorización_Hadoop.pdf`).
 - Course-provided code and config: class notebooks, teacher infra files (Hadoop `docker-compose.yml`, `Prometheus Docker/`), volunteer practice sheets, and notebooks handed out as templates (the agent notebooks `Agente1`/`Agent2` and their `.py`, `Distilbert`, `PyTorch`, the `RA1/T2/ipynbs` set, `Pandas_+_RedesCNN`). A file that arrives with someone else's API key inside is course-provided.
-- Anything generated FROM those: `RESUMEN_*.md`, `T0x_RESUMEN_TEMARIO.md`, `T0x_EXAMEN.md`, `T0x_DIFERENCIAS_PDF_ACTIVIDADES.md`, `T0x_TEMARIO_ACTIVIDADES_NUEVO.md`, the `visual/` notebooks and images, any `.md`/`.pdf` converted from an academic PDF.
+- Anything generated FROM those: `T0x_EXAMEN.md`, `T0x_DIFERENCIAS_PDF_ACTIVIDADES.md`, `T0x_TEMARIO_ACTIVIDADES_NUEVO.md`, any `.md`/`.pdf` converted from an academic PDF.
 
-**Own content** = what the user wrote or produced: his notebooks and scripts, reports and PDFs exported from his notebooks with nbconvert, his notes (`START.md`, `APUNTES.md`), his configs. Own PDFs and `.md` files ARE published: never add blanket `*.pdf` / `*.md` / `*.docx` ignores.
+**Own content** = what the user wrote or produced: his notebooks and scripts, reports and PDFs exported from his notebooks with nbconvert, his notes, his configs, his summaries, his solved exercises and the visualizations he generates (`visual/` notebooks and images), all of which are published. Own PDFs and `.md` files ARE published: never add blanket `*.pdf` / `*.md` / `*.docx` ignores.
 
 **Where educational material lives**: in a folder named `_educational/` in the SAME directory where the file would be. A directory that is entirely educational goes inside the `_educational/` folder of its parent. Examples:
 - `M05_BigDataAplicado/RA1/IABD_M05_T01.pdf` -> `M05_BigDataAplicado/RA1/_educational/IABD_M05_T01.pdf`
 - `M_ProyectoIABD/T1/` (all educational) -> `M_ProyectoIABD/_educational/T1/`
 
 **`**/_educational/` is gitignored.** Never un-ignore it, never `git add -f` anything inside it, never copy its contents elsewhere in the tree.
+
+**Never move a file into or out of `_educational/` unless the user asks.** If a file looks misplaced, say so and leave it where it is.
 
 **New or unclassified file**: classify by evidence (official course names, text addressed to the student such as "trabajarás...", slides/Word/PowerPoint origin, notes derived from a course PDF). Do not guess silently when unsure: ask the user in batches (file name + one-line description), and until he answers do NOT stage or commit it. Default is not publishing. Remember: a PDF made with LaTeX is not proof that it is the user's (teachers use LaTeX too).
 
