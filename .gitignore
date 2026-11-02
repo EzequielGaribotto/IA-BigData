@@ -1,14 +1,22 @@
-*.pdf
-*.docx
-*.txt
-spam.csv
-**/raw/**
-*.tmp
-*.pt
+# --- Educational support material (course-provided or derived from it): NEVER published ---
+# Rule and how to classify: see CLAUDE.md
+**/_educational/
+
+# --- Environments, caches, editor/OS junk ---
 /venv_iabd
+/venv_autoeda
+__pycache__/
+.ipynb_checkpoints/
+~$*
 **/logs**
+commitmsg.txt
+requirements_backup.txt
+*.tmp
+
+# --- Data, models and heavy third-party binaries (not source) ---
+*.csv
+*.zip
 *.keras
-M03/Voluntarios
-!ejercicio_**.pdf
-**/ACT_OPT_04
-!ames_housing_price_prediction.pdf
+*.pt
+*.jar
+**/raw/**
